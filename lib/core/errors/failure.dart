@@ -1,4 +1,3 @@
-/// Custom failure class for use-case level errors.
 class Failure {
   final String message;
 

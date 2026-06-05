@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable empty state widget with illustration and text.
 class EmptyDisplayWidget extends StatelessWidget {
   final String message;
   final String? subtitle;

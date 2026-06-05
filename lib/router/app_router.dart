@@ -6,7 +6,6 @@ import 'package:product_management_app/features/products/presentation/screens/ad
 import 'package:product_management_app/features/products/presentation/screens/edit_product_screen.dart';
 import 'package:product_management_app/features/settings/settings_screen.dart';
 
-/// Named route constants.
 class AppRoutes {
   AppRoutes._();
 
@@ -17,7 +16,6 @@ class AppRoutes {
   static const String settings = '/settings';
 }
 
-/// GoRouter configuration.
 final GoRouter appRouter = GoRouter(
   initialLocation: AppRoutes.home,
   routes: [

@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Reusable error widget with illustration, message, and retry button.
-/// Shows loading spinner on the button when retry is in progress.
 class ErrorDisplayWidget extends StatefulWidget {
   final String message;
   final VoidCallback? onRetry;
@@ -45,13 +42,11 @@ class _ErrorDisplayWidgetState extends State<ErrorDisplayWidget>
 
     setState(() => _isRetrying = true);
 
-    // Animate button press
     await _pulseController.forward();
     await _pulseController.reverse();
 
     widget.onRetry?.call();
 
-    // Keep loading for a moment so user sees the feedback
     await Future.delayed(const Duration(milliseconds: 1500));
 
     if (mounted) {

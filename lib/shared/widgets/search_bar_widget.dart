@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable search bar with Material 3 styling.
 class AppSearchBar extends StatelessWidget {
   final TextEditingController controller;
   final ValueChanged<String> onChanged;

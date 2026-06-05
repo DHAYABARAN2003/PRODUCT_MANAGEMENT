@@ -3,9 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:product_management_app/core/network/dio_provider.dart';
 import 'package:product_management_app/core/network/network_exceptions.dart';
 import 'package:product_management_app/core/errors/api_result.dart';
-
-/// Generic API client providing GET, POST, PUT, DELETE methods.
-/// Returns [ApiResult<T>] for type-safe error handling.
 class ApiClient {
   final Dio _dio;
 

@@ -3,18 +3,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:product_management_app/features/products/data/models/product_model.dart';
 import 'package:product_management_app/services/cache/cache_service.dart';
 
-/// Local datasource for cached product data.
 abstract class ProductLocalDatasource {
-  /// Get cached products.
   List<ProductModel>? getCachedProducts();
 
-  /// Cache products.
   Future<void> cacheProducts(List<ProductModel> products);
 
-  /// Add product ID to recently viewed.
   Future<void> addRecentlyViewed(int productId);
 
-  /// Get recently viewed product IDs.
   List<int> getRecentlyViewedIds();
 }
 

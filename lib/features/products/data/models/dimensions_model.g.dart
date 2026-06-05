@@ -1,10 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 part of 'dimensions_model.dart';
 
-// **************************************************************************
-// JsonSerializableGenerator
-// **************************************************************************
 
 DimensionsModel _$DimensionsModelFromJson(Map<String, dynamic> json) =>
     DimensionsModel(

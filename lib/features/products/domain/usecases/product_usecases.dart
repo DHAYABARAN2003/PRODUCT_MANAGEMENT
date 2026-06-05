@@ -3,7 +3,6 @@ import 'package:product_management_app/features/products/data/models/product_mod
 import 'package:product_management_app/features/products/data/repository/product_repository_impl.dart';
 import 'package:product_management_app/features/products/domain/repository/product_repository.dart';
 
-/// Use case: Fetch products from API.
 class GetProductsUseCase {
   final ProductRepository _repository;
 
@@ -14,7 +13,6 @@ class GetProductsUseCase {
   }
 }
 
-/// Use case: Get a single product by ID.
 class GetProductByIdUseCase {
   final ProductRepository _repository;
 
@@ -25,7 +23,6 @@ class GetProductByIdUseCase {
   }
 }
 
-/// Use case: Search products.
 class SearchProductsUseCase {
   final ProductRepository _repository;
 
@@ -36,7 +33,6 @@ class SearchProductsUseCase {
   }
 }
 
-/// Use case: Add a new product.
 class AddProductUseCase {
   final ProductRepository _repository;
 
@@ -47,7 +43,6 @@ class AddProductUseCase {
   }
 }
 
-/// Use case: Update an existing product.
 class UpdateProductUseCase {
   final ProductRepository _repository;
 
@@ -58,7 +53,6 @@ class UpdateProductUseCase {
   }
 }
 
-/// Use case: Delete a product.
 class DeleteProductUseCase {
   final ProductRepository _repository;
 
@@ -69,7 +63,6 @@ class DeleteProductUseCase {
   }
 }
 
-// ─── Providers ───────────────────────────────────────────────────
 final getProductsUseCaseProvider = Provider<GetProductsUseCase>((ref) {
   return GetProductsUseCase(ref.watch(productRepositoryProvider));
 });

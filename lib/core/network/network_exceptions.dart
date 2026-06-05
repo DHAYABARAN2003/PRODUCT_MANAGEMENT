@@ -1,7 +1,5 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
-
-/// Sealed class representing different network exception types.
 sealed class NetworkException implements Exception {
   final String message;
   final int? statusCode;

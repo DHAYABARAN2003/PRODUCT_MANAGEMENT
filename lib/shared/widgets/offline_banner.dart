@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:product_management_app/core/constants/app_constants.dart';
 
-/// Banner shown when the device is offline.
 class OfflineBanner extends StatelessWidget {
   const OfflineBanner({super.key});
 

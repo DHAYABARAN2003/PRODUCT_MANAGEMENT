@@ -5,7 +5,6 @@ import 'package:product_management_app/features/products/data/models/review_mode
 
 part 'product_model.g.dart';
 
-/// Model representing a single product.
 @JsonSerializable()
 class ProductModel {
   final int id;
@@ -61,10 +60,8 @@ class ProductModel {
 
   Map<String, dynamic> toJson() => _$ProductModelToJson(this);
 
-  /// Calculate the discounted price.
   double get discountedPrice => price - (price * discountPercentage / 100);
 
-  /// Create a copy with modified fields.
   ProductModel copyWith({
     int? id,
     String? title,
@@ -116,7 +113,6 @@ class ProductModel {
   }
 }
 
-/// Response model wrapping list of products with pagination metadata.
 @JsonSerializable()
 class ProductListResponse {
   final List<ProductModel> products;

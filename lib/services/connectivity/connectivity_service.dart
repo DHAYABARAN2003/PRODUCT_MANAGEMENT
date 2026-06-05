@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-/// Service to monitor internet connectivity status.
 class ConnectivityService {
   final Connectivity _connectivity;
   late final StreamController<bool> _controller;
@@ -36,13 +35,11 @@ final connectivityServiceProvider = Provider<ConnectivityService>((ref) {
   return service;
 });
 
-/// Stream provider that emits connectivity status changes.
 final connectivityStreamProvider = StreamProvider<bool>((ref) {
   final service = ref.watch(connectivityServiceProvider);
   return service.connectivityStream;
 });
 
-/// Provider that returns the current connectivity status.
 final isConnectedProvider = FutureProvider<bool>((ref) async {
   final service = ref.watch(connectivityServiceProvider);
   return service.isConnected;

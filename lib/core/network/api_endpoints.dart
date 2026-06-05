@@ -1,6 +1,4 @@
 import 'package:product_management_app/core/constants/api_constants.dart';
-
-/// Utility class to build API endpoint paths.
 class ApiEndpoints {
   ApiEndpoints._();
 

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
-/// Shimmer loading widget for product grid.
 class LoadingWidget extends StatelessWidget {
   final int itemCount;
 

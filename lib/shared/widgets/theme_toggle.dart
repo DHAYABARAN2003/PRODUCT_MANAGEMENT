@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:product_management_app/features/settings/theme_provider.dart';
 
-/// Theme toggle button widget that cycles through system → light → dark.
 class ThemeToggle extends ConsumerWidget {
   const ThemeToggle({super.key});
 

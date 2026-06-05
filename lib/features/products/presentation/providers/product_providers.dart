@@ -5,7 +5,6 @@ import 'package:product_management_app/features/products/data/repository/product
 import 'package:product_management_app/features/products/domain/usecases/product_usecases.dart';
 import 'package:product_management_app/services/connectivity/connectivity_service.dart';
 
-// ─── Product List State ─────────────────────────────────────────
 class ProductListState {
   final List<ProductModel> products;
   final bool isLoading;
@@ -34,7 +33,6 @@ class ProductListState {
   }
 }
 
-// ─── Product List Notifier ─────────────────────────────────────
 class ProductListNotifier extends StateNotifier<ProductListState> {
   final GetProductsUseCase _getProductsUseCase;
   final Ref _ref;
@@ -121,14 +119,12 @@ final productListProvider =
   return ProductListNotifier(getProducts, ref);
 });
 
-// ─── Single Product Provider ───────────────────────────────────
 final productDetailProvider =
     FutureProvider.family<ProductModel, int>((ref, id) async {
   final useCase = ref.watch(getProductByIdUseCaseProvider);
   return useCase(id);
 });
 
-// ─── Search State ──────────────────────────────────────────────
 class SearchState {
   final List<ProductModel> results;
   final bool isLoading;
@@ -207,13 +203,11 @@ final searchProvider =
   return SearchNotifier(searchUseCase);
 });
 
-// ─── Recently Viewed Provider ──────────────────────────────────
 final recentlyViewedIdsProvider = StateProvider<List<int>>((ref) {
   final repository = ref.watch(productRepositoryProvider);
   return repository.getRecentlyViewedIds();
 });
 
-// ─── Add Product Notifier ──────────────────────────────────────
 class AddProductNotifier extends StateNotifier<AsyncValue<ProductModel?>> {
   final AddProductUseCase _addProductUseCase;
 
@@ -239,7 +233,6 @@ final addProductProvider =
   return AddProductNotifier(useCase);
 });
 
-// ─── Update Product Notifier ───────────────────────────────────
 class UpdateProductNotifier extends StateNotifier<AsyncValue<ProductModel?>> {
   final UpdateProductUseCase _updateProductUseCase;
 
@@ -268,7 +261,6 @@ final updateProductProvider = StateNotifierProvider<UpdateProductNotifier,
   return UpdateProductNotifier(useCase);
 });
 
-// ─── Delete Product Notifier ───────────────────────────────────
 class DeleteProductNotifier extends StateNotifier<AsyncValue<bool>> {
   final DeleteProductUseCase _deleteProductUseCase;
 

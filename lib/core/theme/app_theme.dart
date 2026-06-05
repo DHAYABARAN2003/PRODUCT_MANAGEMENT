@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-/// Application theme configuration with Material 3.
 class AppTheme {
   AppTheme._();
 
-  // ─── Brand Colors ─────────────────────────────────────────────────
+  // ─── Brand Colors 
   static const Color _primarySeedColor = Color(0xFF6750A4);
   static const Color _darkPrimarySeedColor = Color(0xFFBB86FC);
 
-  // ─── Light Theme ──────────────────────────────────────────────────
+  // ─── Light Theme ────────────────────────────────────────
   static ThemeData get lightTheme {
     final colorScheme = ColorScheme.fromSeed(
       seedColor: _primarySeedColor,
@@ -121,7 +119,7 @@ class AppTheme {
     );
   }
 
-  // ─── Dark Theme ───────────────────────────────────────────────────
+  // ─── Dark Theme ──────────────────────────────────────────
   static ThemeData get darkTheme {
     final colorScheme = ColorScheme.fromSeed(
       seedColor: _darkPrimarySeedColor,

@@ -14,14 +14,11 @@ import 'package:product_management_app/shared/widgets/product_card.dart';
 import 'package:product_management_app/shared/widgets/search_bar_widget.dart';
 import 'package:product_management_app/shared/widgets/theme_toggle.dart';
 
-/// Provider to persist recently viewed product ID.
 final _addRecentlyViewedProvider =
     FutureProvider.family<void, int>((ref, id) async {
   final repository = ref.read(productRepositoryProvider);
   await repository.addRecentlyViewed(id);
 });
-
-/// Home screen with Flipkart-inspired UI.
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 

@@ -1,4 +1,3 @@
-/// API-related constants including base URL and endpoints.
 class ApiConstants {
   ApiConstants._();
 

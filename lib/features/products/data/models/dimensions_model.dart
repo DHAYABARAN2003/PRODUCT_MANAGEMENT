@@ -2,7 +2,6 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'dimensions_model.g.dart';
 
-/// Model representing product dimensions.
 @JsonSerializable()
 class DimensionsModel {
   final double width;

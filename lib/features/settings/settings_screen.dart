@@ -24,7 +24,6 @@ class SettingsScreen extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Appearance Section
           _sectionHeader(theme, 'Appearance'),
           const SizedBox(height: 8),
           Card(
@@ -80,7 +79,6 @@ class SettingsScreen extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 24),
-          // Cache Section
           _sectionHeader(theme, 'Storage'),
           const SizedBox(height: 8),
           Card(
@@ -103,7 +101,6 @@ class SettingsScreen extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 24),
-          // About Section
           _sectionHeader(theme, 'About'),
           const SizedBox(height: 8),
           Card(
@@ -120,11 +117,6 @@ class SettingsScreen extends ConsumerWidget {
                   ),
                 ),
                 const Divider(height: 1),
-                // ListTile(
-                //   leading: Icon(Icons.code_rounded, color: cs.primary),
-                //   title: const Text('Architecture'),
-                //   trailing: Text('Clean + MVVM', style: theme.textTheme.bodyMedium?.copyWith(color: cs.onSurfaceVariant)),
-                // ),
               ],
             ),
           ),
@@ -147,7 +139,6 @@ class SettingsScreen extends ConsumerWidget {
   }
 }
 
-/// Individual theme option tile with radio-style selection.
 class _ThemeOptionTile extends StatelessWidget {
   final IconData icon;
   final String title;

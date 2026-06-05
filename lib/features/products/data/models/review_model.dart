@@ -1,8 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
 part 'review_model.g.dart';
-
-/// Model representing a product review.
 @JsonSerializable()
 class ReviewModel {
   final int rating;

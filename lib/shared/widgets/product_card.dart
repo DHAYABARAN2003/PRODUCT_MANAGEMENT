@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:product_management_app/features/products/data/models/product_model.dart';
 
-/// A premium product card with image, rating badge, price, and category.
 class ProductCard extends StatelessWidget {
   final ProductModel product;
   final VoidCallback onTap;

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-/// Product image carousel for detail screen.
 class ProductCarousel extends StatefulWidget {
   final List<String> images;
   final String heroTag;

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable rating badge showing star icon and rating value.
 class RatingBadge extends StatelessWidget {
   final double rating;
   final double size;

@@ -47,7 +47,6 @@ class _AddProductScreenState extends ConsumerState<AddProductScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Header illustration
               Container(
                 padding: const EdgeInsets.all(24),
                 decoration: BoxDecoration(
@@ -84,7 +83,6 @@ class _AddProductScreenState extends ConsumerState<AddProductScreen> {
                 ),
               ),
               const SizedBox(height: 24),
-              // Product Name
               Text('Product Name', style: theme.textTheme.labelLarge),
               const SizedBox(height: 8),
               TextFormField(
@@ -99,7 +97,6 @@ class _AddProductScreenState extends ConsumerState<AddProductScreen> {
                 textInputAction: TextInputAction.next,
               ),
               const SizedBox(height: 20),
-              // Description
               Text('Description', style: theme.textTheme.labelLarge),
               const SizedBox(height: 8),
               TextFormField(
@@ -115,7 +112,6 @@ class _AddProductScreenState extends ConsumerState<AddProductScreen> {
                 textInputAction: TextInputAction.next,
               ),
               const SizedBox(height: 20),
-              // Price
               Text('Price', style: theme.textTheme.labelLarge),
               const SizedBox(height: 8),
               TextFormField(
@@ -135,7 +131,6 @@ class _AddProductScreenState extends ConsumerState<AddProductScreen> {
                 textInputAction: TextInputAction.next,
               ),
               const SizedBox(height: 20),
-              // Category
               Text('Category', style: theme.textTheme.labelLarge),
               const SizedBox(height: 8),
               TextFormField(
@@ -150,7 +145,6 @@ class _AddProductScreenState extends ConsumerState<AddProductScreen> {
                 textInputAction: TextInputAction.done,
               ),
               const SizedBox(height: 32),
-              // Submit
               FilledButton.icon(
                 onPressed: addState.isLoading ? null : _submit,
                 icon: addState.isLoading

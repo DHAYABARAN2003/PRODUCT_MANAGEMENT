@@ -2,7 +2,6 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'meta_model.g.dart';
 
-/// Model representing product metadata.
 @JsonSerializable()
 class MetaModel {
   final DateTime createdAt;

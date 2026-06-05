@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable price widget showing discounted and original price.
 class PriceWidget extends StatelessWidget {
   final double price;
   final double discountPercentage;
