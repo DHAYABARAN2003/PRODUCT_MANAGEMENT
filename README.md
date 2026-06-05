@@ -51,7 +51,7 @@ The app connects to the [DummyJSON API](https://dummyjson.com) for product data 
 
 </p>
 
- **Note:** Add your screenshots to the `screenshots/` folder and uncomment the section above. Recommended screenshots: Home (Light), Home (Dark), Product Detail, Add Product, Settings, Search, Offline Banner.
+
 
 ---
 
